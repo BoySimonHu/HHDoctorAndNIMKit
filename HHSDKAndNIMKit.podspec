@@ -8,29 +8,24 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HHSDKAndNIMKit'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of HHSDKAndNIMKit.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/hfzdeyx@163.com/HHSDKAndNIMKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.version          = '0.1.1'
+  s.summary          = '和缓医疗+云信UI库'
+  s.homepage         = 'https://github.com/BoySimonHu/HHDoctorAndNIMKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'hfzdeyx@163.com' => 'fangzheng@guanghe.tv' }
+  s.author           = { 'Simon.Hu' => 'hfzdeyx@163.com' }
+  s.ios.deployment_target = '9.0'
   s.source           = { :git => 'https://github.com/hfzdeyx@163.com/HHSDKAndNIMKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.dependency "NIMKit/Full"
+  s.default_subspec = 'Base'
 
-  s.source_files = 'HHSDKAndNIMKit/Classes/**/*'
+  s.subspec 'Base' do |base|
+        base.vendored_frameworks = 'HHSDKAndNIMKit/Framework/*.framework'
+        base.resources = 'HHSDKAndNIMKit/Framework/resources/*.bundle'
+
+        base.frameworks = 'SystemConfiguration', 'MobileCoreServices', 'AVFoundation', 'CoreTelephony', 'VideoToolbox', 'AudioToolbox', 'CoreMedia'
+        base.libraries = 'z', 'sqlite3.0', 'c++', 'resolv.9'
+    end
   
   # s.resource_bundles = {
   #   'HHSDKAndNIMKit' => ['HHSDKAndNIMKit/Assets/*.png']
