@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'HHSDKAndNIMKit_Example' do
+  pod 'HHSDKAndNIMKit', :path => '../'
+
+  target 'HHSDKAndNIMKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
