@@ -1,0 +1,50 @@
+PODS:
+  - HHSDKAndNIMKit (0.1.0):
+    - HHSDKAndNIMKit/Base (= 0.1.0)
+    - NIMKit/Full
+  - HHSDKAndNIMKit/Base (0.1.0):
+    - NIMKit/Full
+  - M80AttributedLabel (1.6.3)
+  - NIMKit/Core (2.11.2):
+    - M80AttributedLabel (~> 1.6.3)
+    - SDWebImage (~> 4.2.2)
+    - Toast (~> 3.0)
+    - TZImagePickerController (~> 1.9.0)
+  - NIMKit/Full (2.11.2):
+    - NIMKit/Core
+    - NIMSDK (~> 5.9.0)
+  - NIMSDK (5.9.0)
+  - SDWebImage (4.2.3):
+    - SDWebImage/Core (= 4.2.3)
+  - SDWebImage/Core (4.2.3)
+  - Toast (3.1.0)
+  - TZImagePickerController (1.9.8)
+
+DEPENDENCIES:
+  - HHSDKAndNIMKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - M80AttributedLabel
+    - NIMKit
+    - NIMSDK
+    - SDWebImage
+    - Toast
+    - TZImagePickerController
+
+EXTERNAL SOURCES:
+  HHSDKAndNIMKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HHSDKAndNIMKit: ddb4b035b8c1dd00371988b54735636d893c53c7
+  M80AttributedLabel: d06543195d3e451d2ea62ad76d04aa9cea7661d4
+  NIMKit: 7cb8ab636ea639ca661cfe27df086d7432c950a0
+  NIMSDK: 8cf6b0e2d71cbf8be8e1cc697e3baa5cf5b683f7
+  SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
+  TZImagePickerController: 3b9413ae5d049b1fdc5b0c720ad283f35b679a50
+
+PODFILE CHECKSUM: 77ce973501e94730f02392adca23e5962cb548ec
+
+COCOAPODS: 1.6.0.beta.2
