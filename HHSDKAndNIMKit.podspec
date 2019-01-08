@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HHSDKAndNIMKit'
-  s.version          = '0.1.1'
+  s.version          = '0.1.0'
   s.summary          = '和缓医疗+云信UI库'
   s.homepage         = 'https://github.com/BoySimonHu/HHDoctorAndNIMKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
