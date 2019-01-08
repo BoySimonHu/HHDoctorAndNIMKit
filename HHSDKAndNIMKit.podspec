@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Simon.Hu' => 'hfzdeyx@163.com' }
   s.ios.deployment_target = '9.0'
-  s.source           = { :git => 'https://github.com/hfzdeyx@163.com/HHSDKAndNIMKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/BoySimonHu/HHDoctorAndNIMKit.git', :tag => s.version.to_s }
 
   s.dependency "NIMKit/Full"
   s.default_subspec = 'Base'
