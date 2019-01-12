@@ -25,9 +25,9 @@ Pod::Spec.new do |s|
 
         ss.frameworks = 'SystemConfiguration', 'MobileCoreServices', 'AVFoundation', 'CoreTelephony', 'VideoToolbox', 'AudioToolbox', 'CoreMedia'
         ss.libraries = 'z', 'sqlite3.0', 'c++', 'resolv.9'
-        ss.static_framework = true
     end
   
+  s.static_framework = true
   # s.resource_bundles = {
   #   'HHSDKAndNIMKit' => ['HHSDKAndNIMKit/Assets/*.png']
   # }
