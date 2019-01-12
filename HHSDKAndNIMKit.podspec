@@ -19,12 +19,13 @@ Pod::Spec.new do |s|
   s.dependency "NIMKit/Full"
   s.default_subspec = 'Base'
 
-  s.subspec 'Base' do |base|
-        base.vendored_frameworks = 'HHSDKAndNIMKit/Framework/*.framework'
-        base.resources = 'HHSDKAndNIMKit/Framework/resources/*.bundle'
+  s.subspec 'Base' do |ss|
+        ss.vendored_frameworks = 'HHSDKAndNIMKit/Framework/*.framework'
+        ss.resources = 'HHSDKAndNIMKit/Framework/resources/*.bundle'
 
-        base.frameworks = 'SystemConfiguration', 'MobileCoreServices', 'AVFoundation', 'CoreTelephony', 'VideoToolbox', 'AudioToolbox', 'CoreMedia'
-        base.libraries = 'z', 'sqlite3.0', 'c++', 'resolv.9'
+        ss.frameworks = 'SystemConfiguration', 'MobileCoreServices', 'AVFoundation', 'CoreTelephony', 'VideoToolbox', 'AudioToolbox', 'CoreMedia'
+        ss.libraries = 'z', 'sqlite3.0', 'c++', 'resolv.9'
+        ss.static_framework = true
     end
   
   # s.resource_bundles = {
